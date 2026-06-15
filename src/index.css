@@ -258,6 +258,22 @@ h1.head .for { font-weight: 400; color: var(--ink-soft); }
 .spark { display: flex; align-items: flex-end; gap: 3px; height: 34px; }
 .spark span { width: 5px; background: var(--mint); border-radius: 1px; opacity: 0.85; }
 
+@media (max-width: 820px) {
+  .hero .wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 36px;
+    padding-bottom: 40px;
+  }
+  .hero-visual {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .hero-sub {
+    max-width: 100%;
+  }
+}
+
 /* ─── Logo strip ─────────────────────────────────────────── */
 .logos { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper); }
 .logos .wrap { display: flex; align-items: center; gap: 38px; padding-top: 20px; padding-bottom: 20px; flex-wrap: wrap; }
