@@ -27,10 +27,11 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero-visual">
-          <span className="vlabel">Live · Local Search</span>
-          <span className="vlabel r">3.2× calls</span>
-          <div className="blob a" />
-          <div className="blob b" />
+          <img
+            src="/hero.jpg"
+            alt="Abdul Kader"
+            className="hero-img"
+          />
           <div className="vcard">
             <div>
               <div className="sm">Calls booked · 90 days</div>
