@@ -11,7 +11,8 @@
       "PowerShell(winget install Git.Git --accept-package-agreements --accept-source-agreements --silent 2>&1)",
       "PowerShell(Start-Process -FilePath \"https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe\" -Verb Open 2>&1)",
       "PowerShell(Invoke-WebRequest -Uri \"https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe\" -OutFile \"$env:TEMP\\\\git-installer.exe\" -UserAgent \"Windows\" 2>&1)",
-      "WebFetch(domain:minimax-algeng-chat-tts-us.oss-us-east-1.aliyuncs.com)"
+      "WebFetch(domain:minimax-algeng-chat-tts-us.oss-us-east-1.aliyuncs.com)",
+      "Bash(npm run *)"
     ]
   }
 }

@@ -196,8 +196,8 @@ h1.head .for { font-weight: 400; color: var(--ink-soft); }
   margin-top: 30px;
   max-width: 430px;
   color: var(--ink-soft);
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 19px;
+  line-height: 1.65;
   padding-top: 22px;
   border-top: 1px solid var(--line);
 }
@@ -227,17 +227,6 @@ h1.head .for { font-weight: 400; color: var(--ink-soft); }
   border-radius: 120px 120px 0 0;
   background: var(--mint-deep); opacity: 0.4;
 }
-.vlabel {
-  position: absolute;
-  top: 16px;
-  left: 18px;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 9.5px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #3a6ea5;
-}
-.vlabel.r { left: auto; right: 18px; }
 .vcard {
   position: absolute;
   left: 18px; right: 18px; bottom: 18px;
@@ -257,10 +246,11 @@ h1.head .for { font-weight: 400; color: var(--ink-soft); }
 }
 .vcard .sm {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #9bc0e6;
+  color: #ffffff;
+  opacity: 0.85;
 }
 .spark { display: flex; align-items: flex-end; gap: 3px; height: 34px; }
 .spark span { width: 5px; background: var(--mint); border-radius: 1px; opacity: 0.85; }

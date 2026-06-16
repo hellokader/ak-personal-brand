@@ -37,7 +37,7 @@ export default function Hero() {
               <div className="sm">Calls booked · 90 days</div>
               <div className="big">1,840</div>
             </div>
-            <div className="spark" id="spark">
+            <div className="spark">
               {sparkHeights.map((h, i) => (
                 <span key={i} style={{ height: `${h}px` }} />
               ))}
