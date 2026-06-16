@@ -219,14 +219,6 @@ h1.head .for { font-weight: 400; color: var(--ink-soft); }
   object-position: center top;
   display: block;
 }
-.blob { position: absolute; border-radius: 50%; background: var(--mint); opacity: 0.55; filter: blur(2px); }
-.blob.a { width: 120px; height: 120px; top: 64px; left: 50%; transform: translateX(-50%); opacity: 0.32; }
-.blob.b {
-  width: 190px; height: 96px; bottom: 118px; left: 50%;
-  transform: translateX(-50%);
-  border-radius: 120px 120px 0 0;
-  background: var(--mint-deep); opacity: 0.4;
-}
 .vcard {
   position: absolute;
   left: 18px; right: 18px; bottom: 18px;
