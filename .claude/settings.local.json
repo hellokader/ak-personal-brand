@@ -12,7 +12,12 @@
       "PowerShell(Start-Process -FilePath \"https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe\" -Verb Open 2>&1)",
       "PowerShell(Invoke-WebRequest -Uri \"https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe\" -OutFile \"$env:TEMP\\\\git-installer.exe\" -UserAgent \"Windows\" 2>&1)",
       "WebFetch(domain:minimax-algeng-chat-tts-us.oss-us-east-1.aliyuncs.com)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "WebFetch(domain:musemind.agency)",
+      "Bash(npm install *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }

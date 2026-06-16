@@ -29,7 +29,7 @@ export default function Footer() {
             <a href="#work">Work</a>
             <a href="#services">Services</a>
             <a href="#about">About</a>
-            <a href="#writing">Writing</a>
+            <a href="/blog">Writing</a>
             <a href="#book">Contact</a>
           </div>
           <div className="fcol">

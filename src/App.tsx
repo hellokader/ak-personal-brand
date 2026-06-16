@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import TopBar from "./components/TopBar";
 import Hero from "./components/Hero";
 import LogoStrip from "./components/LogoStrip";
@@ -12,9 +13,10 @@ import Tools from "./components/Tools";
 import Writing from "./components/Writing";
 import Booking from "./components/Booking";
 import Footer from "./components/Footer";
+import BlogList from "./components/BlogList";
+import BlogPost from "./components/BlogPost";
 
-export default function App() {
-  // Scroll-reveal: add .in class when .reveal elements enter viewport
+function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,7 +29,6 @@ export default function App() {
       },
       { threshold: 0.12 }
     );
-
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
     return () => observer.disconnect();
   }, []);
@@ -50,5 +51,17 @@ export default function App() {
       </main>
       <Footer />
     </>
+  );
+}
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:slug" element={<BlogPost />} />
+      </Routes>
+    </BrowserRouter>
   );
 }

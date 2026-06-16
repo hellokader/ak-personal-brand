@@ -10,7 +10,7 @@ export const navLinks = [
   { label: "Portfolio", href: "#work" },
   { label: "Services", href: "#services" },
   { label: "About", href: "#about" },
-  { label: "Blog", href: "#writing" },
+  { label: "Blog", href: "/blog" },
 ];
 
 export const logos = [

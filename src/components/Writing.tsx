@@ -1,6 +1,9 @@
-import { posts } from "../data/content";
+import { Link } from "react-router-dom";
+import { blogPosts } from "../data/posts";
 
 export default function Writing() {
+  const previewPosts = blogPosts.slice(0, 3);
+
   return (
     <section className="writing reveal" id="writing">
       <div className="wrap">
@@ -20,28 +23,26 @@ export default function Writing() {
               What I'm <span className="em">thinking about.</span>
             </h2>
           </div>
-          <a
-            href="#"
+          <Link
+            to="/blog"
             className="mono"
             style={{ fontSize: "11px", letterSpacing: ".1em", color: "var(--mint-deep)" }}
           >
             ALL POSTS →
-          </a>
+          </Link>
         </div>
         <div className="posts">
-          {posts.map((post, i) => (
-            <div key={i} className={`post${post.featured ? " feat" : ""}`}>
+          {previewPosts.map((post) => (
+            <Link key={post.id} to={`/blog/${post.slug}`} className="post">
               <div className="date">
                 <span>{post.date}</span>
-                <span>{post.readTime}</span>
+                <span>{post.readTime} read</span>
               </div>
               <div className="thumb" />
               <h3>{post.title}</h3>
-              <p>{post.desc}</p>
-              <a href="#" className="read">
-                READ →
-              </a>
-            </div>
+              <p>{post.excerpt}</p>
+              <span className="read">READ →</span>
+            </Link>
           ))}
         </div>
       </div>
